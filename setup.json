@@ -1,0 +1,12 @@
+{
+  "eva": {
+    "challenge": "multiply",
+    "totalQuestions": 10,
+    "timesTables": [2,5,10]
+  },
+  "seb": {
+    "challenge": "add",
+    "maxNumber": 5, 
+    "totalQuestions": 3
+  }
+}
