@@ -1,7 +1,7 @@
 {
   "eva": {
     "challenge": "multiply",
-    "totalQuestions": 10,
+    "totalQuestions": 30,
     "timesTables": [2,5,10]
   },
   "seb": {

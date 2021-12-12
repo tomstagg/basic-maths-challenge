@@ -16,22 +16,22 @@ def setup_game():
 # def render_question(x,y,setup):
 
 def question_input(question: Question):
-    question = f'{question.x} {question.operator} {question.y}'
-    return input(f'{question:<8}= ')
+    question = f'  {question.x} {question.operator} {question.y}'
+    return input(f'{question:<10}= ')
 
 
 def correct(answer_time):
-    result = f"{tick_icon} {answer_time:.2f} seconds"
+    result = f"{tick_icon} {answer_time:.2f} secs"
     display_result(result)
 
 
 def wrong(answer_time):
-    result = f"{cross_icon} {answer_time:.2f} seconds"
+    result = f"{cross_icon} {answer_time:.2f} secs"
     display_result(result)
 
 
 def display_result(result):
-    print(f'\033[13C\033[1A {result}')
+    print(f'\033[15C\033[1A {result}')
 
 
 def results(correct_answers, total_questions, test_answer_time):

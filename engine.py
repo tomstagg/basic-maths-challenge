@@ -20,7 +20,7 @@ while question_no <= total_questions:
     guess = render.question_input(question)
     answer_time = perf_counter() - start_time
 
-    if isinstance(guess, int) and int(guess) == calc.get_result(question.x, question.y, setup['challenge']):
+    if guess.isnumeric() and int(guess) == calc.get_result(question.x, question.y, setup['challenge']):
         correct_answers += 1
         render.correct(answer_time)
     else:
